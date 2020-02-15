@@ -1,0 +1,13 @@
+use Rack::Static,
+  urls: ['/img', '/css']
+
+run -> (env) do
+  [
+    200,
+    {
+      'Content-Type'  => 'text/html',
+      'Cache-Control' => 'public, max-age=86400'
+    },
+    File.open('index.html', File::RDONLY)
+  ]
+end
