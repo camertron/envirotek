@@ -5,7 +5,7 @@
  * Not using this, in favor of using a Wordpress page with customizable HTML content blocks
  * Set front page in Wordpress backend in Settings -> Reading
  *
- * @package _envirotek
+ * @package envirotek
  */
 ?>
 

@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package _envirotek
+ * @package envirotek
  */
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>

@@ -1,21 +1,21 @@
 <?php
 /**
- * _envirotek functions and definitions.
+ * envirotek functions and definitions.
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package _envirotek
+ * @package envirotek
  */
 
 /**
  * Sets up theme defaults and registers support for various WordPress features.
  */
-function _envirotek_setup() {
+function envirotek_setup() {
 	/*
 	 * Make theme available for translation.
 	 * Translations can be filed in the /languages/ directory.
 	 */
-	load_theme_textdomain( '_envirotek', get_template_directory() . '/languages' );
+	load_theme_textdomain( 'envirotek', get_template_directory() . '/languages' );
 
 	// Add theme supports
 	add_theme_support( 'automatic-feed-links' );
@@ -36,7 +36,7 @@ function _envirotek_setup() {
 		'caption',
 	) );
 }
-add_action( 'after_setup_theme', '_envirotek_setup' );
+add_action( 'after_setup_theme', 'envirotek_setup' );
 
 /**
 * Remove emoji support
@@ -47,12 +47,12 @@ remove_action( 'wp_print_styles', 'print_emoji_styles' );
 /**
  * Enqueue scripts and styles.
  */
-function _envirotek_scripts() {
+function envirotek_scripts() {
 	wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/css/bootstrap.min.css', array(),  '4.3.1' );
 	wp_enqueue_style( 'font-poiret-one', 'https://fonts.googleapis.com/css?family=Poiret+One&display=swap' );
-	wp_enqueue_style( '_envirotek-style', get_template_directory_uri() . '/css/envirotek.css', array( 'bootstrap', 'font-poiret-one' ),  wp_get_theme()->get( 'Version' ) );
+	wp_enqueue_style( 'envirotek-style', get_template_directory_uri() . '/css/envirotek.css', array( 'bootstrap', 'font-poiret-one' ),  wp_get_theme()->get( 'Version' ) );
 }
-add_action( 'wp_enqueue_scripts', '_envirotek_scripts' );
+add_action( 'wp_enqueue_scripts', 'envirotek_scripts' );
 
 /**
  * For testing purposes: print an array cleanly
