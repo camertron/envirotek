@@ -25,9 +25,11 @@
 					</div>
 				</div>
 				<div class="col-lg-3 d-flex align-items-center justify-content-center justify-content-lg-end">
-					<img src="<?php echo get_template_directory_uri(); ?>/img/linkedin.png" class="social mt-5 mt-md-0" />
-					<img src="<?php echo get_template_directory_uri(); ?>/img/twitter.png" class="social ml-2 mt-5 mt-md-0" />
-					<img src="<?php echo get_template_directory_uri(); ?>/img/facebook.png" class="social ml-2 mt-5 mt-md-0" />
+					<a href="https://www.linkedin.com/company/envirotek-remediation-inc/">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/linkedin.png" class="social mt-5 mt-md-0" />
+					</a>
+					<img src="<?php echo get_template_directory_uri(); ?>/img/twitter.png" class="social ml-2 mt-5 mt-md-0 d-none" />
+					<img src="<?php echo get_template_directory_uri(); ?>/img/facebook.png" class="social ml-2 mt-5 mt-md-0 d-none" />
 				</div>
 			</div>
 		</div>
