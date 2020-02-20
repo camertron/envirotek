@@ -1,34 +1,22 @@
-<html>
-  <head>
-    <title>EnviroTek Remediation, Inc</title>
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/envirotek.css">
-    <link href="https://fonts.googleapis.com/css?family=Poiret+One&display=swap" rel="stylesheet">
-  </head>
-  <body>
-    <div>
-      <div class="header">
-        <div class="container">
-          <img src="img/header-logo.png" class="header-logo" />
-        </div>
-        <div class="hero">
-          <div class="hero-text poiret container">
-            <div class="row">
-              <p class="hero-text-contents col-lg-6 offset-lg-6 text-center text-lg-right">
-                EnviroTek Remediation is building the world's most reliable environmental remediation solutions through leading edge innovations and continuous research and development programs
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+<?php
+/**
+ * The homepage for our theme.
+ *
+ * Not using this, in favor of using a Wordpress page with customizable HTML content blocks
+ * Set front page in Wordpress backend in Settings -> Reading
+ *
+ * @package envirotek
+ */
+?>
+
+<?php get_header(); ?>
 
     <div class="headline">
       <div class="container">
         <div class="row">
           <div class="col-12">
             <div class="d-flex">
-              <img src="img/alberta.png" class="alberta" />
+              <img src="<?php echo get_template_directory_uri(); ?>/img/alberta.png" class="alberta" />
               <div class="text poiret ml-4">
                 <div>
                   Alberta has over <em>1.2 trillion liters</em> of toxic oilsands tailings in ponds occupying over 220 square kilometres.
@@ -40,7 +28,7 @@
         <div class="row mt-5">
           <div class="col-12">
             <div class="line">
-              <img src="img/dot.jpg" />
+              <img src="<?php echo get_template_directory_uri(); ?>/img/dot.jpg" />
             </div>
           </div>
         </div>
@@ -60,7 +48,7 @@
           </div>
           <div class="col-lg-6">
             <div class="tailing-pond">
-              <img src="img/tailing-pond.jpg" />
+              <img src="<?php echo get_template_directory_uri(); ?>/img/tailing-pond.jpg" />
             </div>
             <div class="sans-serif caption pt-3">
               A tailings pond near the Syncrude oilsands mining operation, Alberta, Canada
@@ -75,7 +63,7 @@
         <div class="row">
           <div class="col-sm-auto">
             <div class="title poiret uppercase">
-              <img src="img/letter-c.png" class="letter-c" />
+              <img src="<?php echo get_template_directory_uri(); ?>/img/letter-c.png" class="letter-c" />
               <div>ompetitive Advantages</div>
             </div>
           </div>
@@ -115,7 +103,7 @@
           <div class="col-sm-auto">
             <div class="title poiret uppercase">
               <div>Remediation Pro</div>
-              <img src="img/letter-c.png" class="letter-c" />
+              <img src="<?php echo get_template_directory_uri(); ?>/img/letter-c.png" class="letter-c" />
               <div>ess</div>
             </div>
           </div>
@@ -124,7 +112,7 @@
           <div class="col-lg-4 pb-5">
             <div class="slurry photo"></div>
             <div class="step">
-              <img src="img/number-1.png" />
+              <img src="<?php echo get_template_directory_uri(); ?>/img/number-1.png" />
               <div class="title poiret uppercase mt-4 text-center">Slurry</div>
               <div class="caption poiret text-center mt-4">
                 Chemicals are mixed into slurry and combination sits overnight.
@@ -134,7 +122,7 @@
           <div class="col-lg-4 pb-5">
             <div class="treated photo"></div>
             <div class="step">
-              <img src="img/number-2.png" />
+              <img src="<?php echo get_template_directory_uri(); ?>/img/number-2.png" />
               <div class="title poiret uppercase mt-4 text-center">Treated Tailings</div>
               <div class="caption poiret text-center mt-4">
                 Product completely solidifies producing a compound of tailing and resin.
@@ -144,7 +132,7 @@
           <div class="col-lg-4 pb-5">
             <div class="final photo"></div>
             <div class="step">
-              <img src="img/number-3.png" />
+              <img src="<?php echo get_template_directory_uri(); ?>/img/number-3.png" />
               <div class="title poiret uppercase mt-4 text-center">Final Product</div>
               <div class="caption poiret text-center mt-4">
                 Product after air-drying. Entire process takes 3-4 days depending on environmental factors.
@@ -161,7 +149,7 @@
           <div class="col-sm-auto">
             <div class="title poiret uppercase">
               <div>Our Experien</div>
-              <img src="img/letter-c.png" class="letter-c" />
+              <img src="<?php echo get_template_directory_uri(); ?>/img/letter-c.png" class="letter-c" />
               <div>ed Team</div>
             </div>
           </div>
@@ -172,7 +160,7 @@
         <div class="row mt-5">
           <div class="col-lg-3">
             <div class="photo text-md-left text-lg-center">
-              <img src="img/brian.jpg" />
+              <img src="<?php echo get_template_directory_uri(); ?>/img/brian.jpg" />
             </div>
             <div class="bio">
               <div class="title-small poiret uppercase caption mt-4">Brian Leeners</div>
@@ -188,7 +176,7 @@
           </div>
           <div class="col-lg-3 mt-5 mt-lg-0">
             <div class="photo text-md-left text-lg-center">
-              <img src="img/maria.jpg" />
+              <img src="<?php echo get_template_directory_uri(); ?>/img/maria.jpg" />
             </div>
             <div class="bio">
               <div class="title-small poiret uppercase mt-4 caption">Maria Conejo</div>
@@ -204,7 +192,7 @@
           </div>
           <div class="col-lg-3 mt-5 mt-lg-0">
             <div class="photo text-md-left text-lg-center">
-              <img src="img/greg-o.jpg" />
+              <img src="<?php echo get_template_directory_uri(); ?>/img/greg-o.jpg" />
             </div>
             <div class="bio">
               <div class="title-small poiret uppercase mt-4 caption">Greg Olesen</div>
@@ -219,7 +207,7 @@
           </div>
           <div class="col-lg-3 mt-5 mt-lg-0">
             <div class="photo text-md-left text-lg-center">
-              <img src="img/greg-p.jpg" />
+              <img src="<?php echo get_template_directory_uri(); ?>/img/greg-p.jpg" />
             </div>
             <div class="bio">
               <div class="title-small poiret uppercase mt-4 caption">Greg Pearson</div>
@@ -245,14 +233,14 @@
           </div>
           <div class="col-sm-auto">
             <div class="title poiret uppercase">
-              <img src="img/letter-c.png" class="letter-c" />
+              <img src="<?php echo get_template_directory_uri(); ?>/img/letter-c.png" class="letter-c" />
               <div>ollaborations</div>
             </div>
           </div>
         </div>
         <div class="row mt-5">
           <div class="col-lg-4 offset-lg-1 d-flex justify-content-center justify-content-lg-end align-items-center logo">
-            <img src="img/cn.png" class="cn" />
+            <img src="<?php echo get_template_directory_uri(); ?>/img/cn.png" class="cn" />
           </div>
           <div class="sans-serif col-lg-5 text-center text-lg-left gray blurb pl-lg-5 mt-4">
             In discussions on Oil Sands Pilot and Bacterial Hydrocarbon Remediation sample testing.
@@ -260,7 +248,7 @@
         </div>
         <div class="row mt-5">
           <div class="col-lg-4 offset-lg-1 d-flex justify-content-center justify-content-lg-end align-items-center logo">
-            <img src="img/oilserv.png" class="oilserv" />
+            <img src="<?php echo get_template_directory_uri(); ?>/img/oilserv.png" class="oilserv" />
           </div>
           <div class="sans-serif col-lg-5 text-center text-lg-left gray blurb pl-lg-5 mt-4">
             Early discussions on an integrated application partnership for Bacterial Hydrocarbon Remediation for the Middle East and North Africa.
@@ -268,7 +256,7 @@
         </div>
         <div class="row mt-5">
           <div class="col-lg-4 offset-lg-1 d-flex justify-content-center justify-content-lg-end align-items-center logo">
-            <img src="img/schlumberger.png" class="schlumberger" />
+            <img src="<?php echo get_template_directory_uri(); ?>/img/schlumberger.png" class="schlumberger" />
           </div>
           <div class="sans-serif col-lg-5 text-center text-lg-left gray blurb pl-lg-5 mt-4">
             In discussions regarding end-product testing/applications subject to the Oil Sands Pilot.
@@ -276,7 +264,7 @@
         </div>
         <div class="row mt-5">
           <div class="col-lg-4 offset-lg-1 d-flex justify-content-center justify-content-lg-end align-items-center logo">
-            <img src="img/cp-services.png" class="cp-services" />
+            <img src="<?php echo get_template_directory_uri(); ?>/img/cp-services.png" class="cp-services" />
           </div>
           <div class="sans-serif col-lg-5 text-center text-lg-left gray blurb pl-lg-5 mt-4">
             Drafting terms for an integrated application partnership for Bacterial Hydrocarbon Remediation.
@@ -285,29 +273,4 @@
       </div>
     </div>
 
-    <div class="footer d-flex align-items-center">
-      <div class="container">
-        <div class="row pt-5 pb-5">
-          <div class="col-lg-9 text-center text-md-left">
-            <img src="img/footer-logo.png" class="logo" />
-            <div class="d-inline-flex">
-              <div>
-                <div class="inc white poiret uppercase ml-md-4 d-none d-md-block">
-                  EnviroTek Remediation, Inc
-                </div>
-                <div class="location sans-serif white ml-md-4 d-none d-md-block">
-                  Alberta, Canada
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 d-flex align-items-center justify-content-center justify-content-lg-end">
-            <img src="img/linkedin.png" class="social mt-5 mt-md-0" />
-            <img src="img/twitter.png" class="social ml-2 mt-5 mt-md-0" />
-            <img src="img/facebook.png" class="social ml-2 mt-5 mt-md-0" />
-          </div>
-        </div>
-      </div>
-    </div>
-  </body>
-</html>
+<?php get_footer(); ?>
